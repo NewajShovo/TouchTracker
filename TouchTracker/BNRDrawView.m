@@ -141,7 +141,7 @@
     for (UITouch *t in touches)
     {
         NSValue *key = [ NSValue valueWithNonretainedObject:t];
-        [self.linesInProgress removeObjectsForKeys:key];
+        [self.linesInProgress removeObjectsForKeys:@[key]];
     }
     [self setNeedsDisplay];
     
